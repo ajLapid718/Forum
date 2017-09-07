@@ -27,7 +27,7 @@
    border-bottom: none;
  }
 
- input#post_title {
+input#post_title {
     display: -webkit-box;
     -webkit-logical-width: -webkit-fill-available;
 }
@@ -130,6 +130,7 @@ textarea#post_content {
 		font-size: 0.9rem;
 		font-weight: 100;
 		line-height: 1.5;
+    text-align: justify;
 	}
 	#comments {
 		.comment {
