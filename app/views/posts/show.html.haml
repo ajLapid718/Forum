@@ -1,5 +1,5 @@
 #post_content
-  - if current_user.id == @post.user_id
+  - if user_signed_in? && current_user.id == @post.user_id
     = link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "button"
     = link_to "Edit", edit_post_path(@post), class: "button"
 
