@@ -6,7 +6,7 @@
     %h2= pluralize(@post.comments.count, "Comment")
     = render @post.comments
 
-    %h3 Reply to thread
+    %h3
     = render "comments/form"
 
     %br
