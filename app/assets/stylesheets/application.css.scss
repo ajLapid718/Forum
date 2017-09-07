@@ -37,6 +37,10 @@ textarea#post_content, textarea#comment_comment {
     width: -webkit-fill-available;
 }
 
+a.button {
+  float: right;
+}
+
 input[type="submit"] {
   background: #397CAC;
   border: none;
