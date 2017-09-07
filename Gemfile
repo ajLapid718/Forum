@@ -10,6 +10,7 @@ gem 'haml'
 gem 'simple_form'
 gem 'devise'
 gem 'coffee-script-source', '~> 1.8.0'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 #Gem Additions Above
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
