@@ -5,9 +5,16 @@
   = csrf_meta_tags
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-
 %body
-  %p.notice= notice
-  %p.alert= alert
+  %header.main_header
+    #logo
+      %p Forum
+    #buttons
+      = link_to "New Post", new_post_path
 
-  = yield
+  .wrapper
+    %p.notice= notice
+    %p.alert= alert
+
+  .wrapper
+    = yield
