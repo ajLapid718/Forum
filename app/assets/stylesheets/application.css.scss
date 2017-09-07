@@ -27,6 +27,16 @@
    border-bottom: none;
  }
 
+ input#post_title {
+    display: -webkit-box;
+    -webkit-logical-width: -webkit-fill-available;
+}
+
+textarea#post_content {
+    display: -webkit-box;
+    width: -webkit-fill-available;
+}
+
 .wrapper {
 	width: 60%;
 	max-width: 1140px;
