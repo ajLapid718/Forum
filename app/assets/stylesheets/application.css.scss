@@ -19,6 +19,14 @@
  	background: #EDEFF0;
  }
 
+ abbr {
+    text-decoration: none;
+ }
+
+ abbr[title] {
+   border-bottom: none;
+ }
+
 .wrapper {
 	width: 60%;
 	max-width: 1140px;

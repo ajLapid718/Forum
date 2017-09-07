@@ -1,16 +1,13 @@
 class CommentsController < ApplicationController
-  # def new
-  #   @comment = @post.comments.new
-  # end
-
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(params[:comment].permit(:comment))
+    @comment.user_id = current_user.id
 
     if @comment.save
       redirect_to post_path(@post)
     else
-      render :new
+      flash[:errors] = @comment.errors.full_messages
     end
   end
 end
